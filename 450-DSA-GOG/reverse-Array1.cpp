@@ -1,13 +1,6 @@
 #include<iostream>
 
 using namespace std;
-void reverse(int a[],int s,int e){
-	if(s>=end)
-	return ;
-	int temp=a[s];
-	a[s]=a[e];
-	a[e]=temp;
-}
 int main(){
 
   int arr[5]={1,2,3,4,5};
