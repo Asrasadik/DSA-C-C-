@@ -3,7 +3,7 @@ using namespace std;
 void shiftall(int a[], int l,int r)
 {
 	while(l<=r){
-		if(a[l]<0 && a[r]<0){
+		if(a[l]<0 && a[r]>0){
 			l++;
 		}
 		else if(a[l]>0 && a[r]<0){
@@ -29,7 +29,7 @@ int main(){
   int i;
   shiftall(a,0,n-1);
   for(i=0;i<n;i++){
-		cout<<a[i]<" ";
+		cout<<a[i]<<" ";
 	}
   return 0;
 }
