@@ -4,7 +4,13 @@ using namespace std;
 int minJumps(int a[], int n){
 	int i=0,jump;
 	int cnt=0;
-	
+	if(n<=1){
+		return 0;
+	}
+	if (a[0] == 0)
+        return -1;
+        
+        
 	while(i<n){
 		jump=a[i];
 		cnt++;
@@ -13,7 +19,7 @@ int minJumps(int a[], int n){
 			break;
 		}
 	}
-	cout<<cnt;
+	return cnt;
 }
 
 int main(){
